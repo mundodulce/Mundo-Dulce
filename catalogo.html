@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Productos</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #4a4e69;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: white;
+            width: 200px; /* Ajusta el ancho según sea necesario */
+        }
+        .producto img {
+            max-width: 100%; /* Asegúrate de que la imagen no sobresalga */
+            height: auto;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Productos</a>
+        <a href="#promociones">Promociones</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    
+    <section id="productos" class="catalogo">
+        <div class="producto">
+            <img src="placeholder.png" alt="Producto 1" />
+            <h3>Producto 1</h3>
+            <p>Descripción breve del producto 1.</p>
+            <p>$20.00</p>
+        </div>
+        <div class="producto">
+            <img src="placeholder.png" alt="Producto 2" />
+            <h3>Producto 2</h3>
+            <p>Descripción breve del producto 2.</p>
+            <p>$25.00</p>
+        </div>
+        <div class="producto">
+            <img src="placeholder.png" alt="Producto 3" />
+            <h3>Producto 3</h3>
+            <p>Descripción breve del producto 3.</p>
+            <p>$30.00</p>
+        </div>
+        <div class="producto">
+            <img src="placeholder.png" alt="Producto 4" />
+            <h3>Producto 4</h3>
+            <p>Descripción breve del producto 4.</p>
+            <p>$15.00</p>
+        </div>
+    </section>
+
+    <section id="promociones">
+        <h2>Promociones</h2>
+        <p>No te pierdas nuestras ofertas especiales y descuentos en productos seleccionados.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, no dudes en contactarnos a través de nuestro correo electrónico: contacto@mundo-dulce.com</p>
+    </section>
+</body>
+</html>
