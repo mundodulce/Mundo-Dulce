@@ -7,12 +7,17 @@
     <style>
         body {
             background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #4a4e69;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         nav {
             background-color: #333;
@@ -23,8 +28,9 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 20px;
             text-decoration: none;
+            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #575757;
@@ -32,24 +38,47 @@
         .content {
             display: flex;
             justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        .content .image-section {
+        .image-section {
             flex: 1;
             text-align: center;
+            padding: 10px;
         }
         .image-section img {
-            max-width: 100%; /* Asegúrate de que la imagen no sobresalga */
+            max-width: 100%;
             height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         .description {
             flex: 2;
             padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #4a4e69;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #4a4e69;
             color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -67,51 +96,52 @@
             <img src="logo.png" alt="Descripción de la imagen">
         </div>
         <div class="description">
-            <h2>Somos</h2>
-            <p>Mundo Dulce ofrece gelatinas artesanales innovadoras, combinando sabores frescos y naturales para una experiencia de postre única.
+            <h2>¿Quiénes somos?</h2>
+            <p>Mundo Dulce ofrece gelatinas artesanales innovadoras, combinando sabores frescos y naturales para una experiencia de postre única.</p>
+            
+            <h3>Gelatinas MUNDO DULCE</h3>
+            <ul>
+                <li>Marca que ofrece gelatinas mosaico artesanales con barritas de fresa y piña.</li>
+                <li>Misión: crear postres únicos utilizando ingredientes frescos y de alta calidad.</li>
+            </ul>
 
-*Gelatinas MUNDO DULCE*
-- Marca que ofrece gelatinas mosaico artesanales con barritas de fresa y piña.
-- Misión: crear postres únicos utilizando ingredientes frescos y de alta calidad.
+            <h3>¿Qué es MUNDO DULCE?</h3>
+            <ul>
+                <li>Producto estrella: gelatinas mosaico de yogurt.</li>
+                <li>Sabores principales: fresa, piña y crema chantillí.</li>
+                <li>Valor diferencial: ingredientes frescos, combinación única de texturas y sabores.</li>
+            </ul>
 
-*¿QUÉ ES MUNDO DULCE?*
-- Producto estrella: gelatinas mosaico de yogurt.
-- Sabores principales: fresa, piña y crema chantillí.
-- Valor diferencial: ingredientes frescos, combinación única de texturas y sabores.
+            <h3>¿Por qué elegir MUNDO DULCE?</h3>
+            <ul>
+                <li>Sabor único que combina yogurt, frutas y crema chantillí.</li>
+                <li>Ingredientes frescos y naturales sin conservadores artificiales.</li>
+                <li>Presentación atractiva y moderna, ideal para cualquier ocasión.</li>
+            </ul>
 
-*¿POR QUÉ MUNDO DULCE?*
-- Sabor único que combina yogurt, frutas y crema chantillí.
-- Ingredientes frescos y naturales sin conservadores artificiales.
-- Presentación atractiva y moderna, ideal para cualquier ocasión.
+            <h3>Ingredientes Naturales</h3>
+            <ul>
+                <li>Yogurt cremoso como base de la gelatina.</li>
+                <li>Barritas de fresa y piña que complementan el sabor.</li>
+                <li>Crema chantillí que aporta suavidad.</li>
+            </ul>
 
-*Ingredientes Naturales*
-- Yogurt cremoso como base de la gelatina.
-- Barritas de fresa y piña que complementan el sabor.
-- Crema chantillí que aporta suavidad.
+            <h3>Beneficios Del Mundo Dulce</h3>
+            <ul>
+                <li>Sabor único y delicioso con ingredientes naturales.</li>
+                <li>Atractivo visual con un mosaico de colores.</li>
+                <li>Versatilidad para celebraciones o como un dulce indulgente.</li>
+            </ul>
 
-*Beneficios Del Mundo Dulce*
-- Sabor único y delicioso con ingredientes naturales.
-- Atractivo visual con un mosaico de colores.
-- Versatilidad para celebraciones o como un dulce indulgente.
+            <h3>Generaciones Vivientes</h3>
+            <ul>
+                <li>Baby Boomers: aprecian la calidad y presentación tradicional.</li>
+                <li>Generación X: buscan productos prácticos y deliciosos.</li>
+                <li>Millennials: valoran frescura y presentación atractiva.</li>
+                <li>Generación Z: atraídos por innovación y originalidad.</li>
+            </ul>
 
-*Generaciones Vivientes*
-- Baby Boomers: aprecian la calidad y presentación tradicional.
-- Generación X: buscan productos prácticos y deliciosos.
-- Millennials: valoran frescura y presentación atractiva.
-- Generación Z: atraídos por innovación y originalidad.
+            <h3>Elevator Pitch</h3>
+            <p>"Mundo Dulce: un mosaico de sabores con gelatina de yogurt, barritas de frutas y crema chantillí, ideal para cualquier ocasión."</p>
 
-*Elevator Pitch*
-- "Mundo Dulce: un mosaico de sabores con gelatina de yogurt, barritas de frutas y crema chantillí, ideal para cualquier ocasión."
-
-*MODELO AIDA PARA MUNDO DULCE*
-- Atención: postre que ofrece una explosión de dulzura.
-- Interés: combinación de sabores y texturas únicas.
-- Deseo: ideal para compartir en diversas ocasiones.
-- Acción: invita a probar y disfrutar de Mundo Dulce.
-
-*CONCLUSIÓN*
-- Mundo Dulce transforma la gelatina en una experiencia gourmet, ofreciendo postres saludables y deliciosos que sorprenden por su sabor y apariencia..</p>
-        </div>
-    </div>
-</body>
-</html>
+            <h3>
